@@ -7,7 +7,8 @@ function IsModuleAvailable {
     )
     Write-Host "Checking the module $module_name"
     [bool] $module_exists = $false
-    if (Get-Module -ListAvailable -Name $module_name) {
+    if ((Get-Module -ListAvailable -Name $module_name) -or 
+    (Get-Module -Name $module_name)) {
         Write-Host "Module exists"
         $module_exists = $true
     } 
