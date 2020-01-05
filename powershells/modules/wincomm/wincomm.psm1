@@ -30,3 +30,16 @@ function write-error-message{
     )
     Write-Host $message -ForegroundColor Red
 }
+
+function ReloadPSModule{
+    param(
+        [String] $module_name
+    )
+    if(IsModuleAvailable -module_name $module_name){
+        write-display-message "Removing module $module_name"
+        Remove-Module $module_name
+    }
+    #$ScriptPath = split-path -parent $MyInvocation.MyCommand.Path
+    #write-display-message "Import Module $ScriptPath\$module_name.psm1"
+    Import-Module $module_name
+}
