@@ -1,8 +1,12 @@
 $azModuleName = "Az"
 $azADModuleName = "AzureAD"
+$Repo_Root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent;
+
 #import module 
 Write-host "Importing AZ module if it doesnt exists"
-Import-module ..\modules\wincomm.psm1
+write-host "Repo path is ::$Repo_Root"
+& "$Repo_Root\powershells\setup\installCustomModule.ps1"
+
 if (-Not (IsModuleAvailable -module_name $azModuleName)){
     Install-Module -Name $azModuleName -AllowClobber -Scope CurrentUser -Force
     write-display-message "Successfully Installed the Module $azModuleName"
