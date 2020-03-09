@@ -1,0 +1,2 @@
+-- CREATE THE FORMAT FILE ------- 
+bcp stockdb.nasdaq.otherlisted format nul -f .\sql\nasdaq\otherlisted.fmt -t "|" -r "\n" -S "stockdbserver.database.windows.net" -U "stockadmin" -P "stock12$#"

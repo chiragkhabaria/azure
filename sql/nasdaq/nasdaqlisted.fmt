@@ -1,0 +1,10 @@
+14.0
+8
+1       SQLCHAR             0       0       "|"      1     symbol                               SQL_Latin1_General_CP1_CI_AS
+2       SQLCHAR             0       0       "|"      2     security_name                        SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR             0       0       "|"      3     market_category                      SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR             0       0       "|"      4     test_issue                           SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR             0       0       "|"      5     financial_status                     SQL_Latin1_General_CP1_CI_AS
+6       SQLCHAR             0       0       "|"      6     round_lot_size                       SQL_Latin1_General_CP1_CI_AS
+7       SQLCHAR             0       0       "|"      7     eft                                  SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR             0       0       "\r\n"   8     next_shares                          SQL_Latin1_General_CP1_CI_AS
