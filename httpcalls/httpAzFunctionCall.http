@@ -1,0 +1,10 @@
+# My Variables
+@contentType = application/json
+@token = W8MkM77s1eap1hJKk4n598CCgra8X4EOLMlYF5Je241TSALAsDxnqQ==
+POST https://escalator-functions-198330.azurewebsites.net/api/HttpTrigger1
+Content-Type: {{contentType}}
+x-functions-key: {{token}}
+
+{
+    "Name": "Azure Functions, how are you doing Today !!"
+}
